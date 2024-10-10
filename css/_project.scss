@@ -1,0 +1,49 @@
+.project {
+    background-color: variables.$accent-color;
+    color: variables.$light-color;
+
+    .container {
+        @include tools.responsiveMax(1440px) {
+            width: 75%;
+        }
+
+        @include tools.responsiveMax(1280px) {
+            width: 86%;
+        }
+    }
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+
+    @include tools.responsiveMax(992px) {
+        justify-content: center;
+        gap: 30px;
+        padding: 50px 0;
+    }
+}
+
+.project__item {
+    display: flex;
+    gap: 16%;
+
+    @include tools.responsiveMax(992px) {
+        justify-content: center;
+        flex-basis: 25%;
+    }
+}
+
+.project__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project__number {
+    font-size: 1.31rem;
+    font-weight: 500;
+}

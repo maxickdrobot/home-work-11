@@ -1,0 +1,11 @@
+@mixin responsiveMin($breakpoint) {
+    @media (min-width: $breakpoint) {
+      @content; // Вставка вмісту, переданого в міксин
+    }
+}
+
+@mixin responsiveMax($breakpoint) {
+    @media (max-width: $breakpoint) {
+      @content; // Вставка вмісту, переданого в міксин
+    }
+}
